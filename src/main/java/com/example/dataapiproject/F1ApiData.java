@@ -8,7 +8,6 @@ public class F1ApiData {
     private String time;
     private String gap;
     
-    // Constructor
     public F1ApiData(String driverName, String team, String position, String time, String gap) {
         this.driverName = driverName;
         this.team = team;
@@ -17,7 +16,6 @@ public class F1ApiData {
         this.gap = gap;
     }
     
-    // Default constructor
     public F1ApiData() {
         this.driverName = "";
         this.team = "";
@@ -26,7 +24,7 @@ public class F1ApiData {
         this.gap = "";
     }
     
-    // Getters
+
     public String getDriverName() {
         return driverName;
     }
@@ -47,7 +45,6 @@ public class F1ApiData {
         return gap;
     }
     
-    // Setters
     public void setDriverName(String driverName) {
         this.driverName = driverName;
     }

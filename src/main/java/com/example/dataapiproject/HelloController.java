@@ -127,7 +127,7 @@ public class HelloController {
                 JSONObject team = result.getJSONObject("team");
                 String teamName = team.getString("teamName");
 
-                String position = String.valueOf(i + 1); // Position based on order in array
+                String position = String.valueOf(i + 1);
                 String time = result.optString("time", "No time");
 
                 String gap;

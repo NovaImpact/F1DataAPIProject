@@ -14,21 +14,21 @@
     </padding>
     
     <!-- Title Label -->
-    <Label style="-fx-text-fill: #e10600;" text="F1 2024 Practice Session Results" textAlignment="CENTER">
+    <Label prefHeight="115.0" prefWidth="721.0" style="-fx-text-fill: #e10600;" text="F1 Practice 1 Session Results | Gulf Air Bahrain Grand Prix 2024" textAlignment="CENTER">
         <font>
             <Font name="System Bold" size="24.0" />
         </font>
     </Label>
     
     <!-- Status Label -->
-    <Label fx:id="statusLabel" style="-fx-text-fill: #333333;" text="Click button to fetch data" textAlignment="CENTER" wrapText="true">
+    <Label fx:id="statusLabel" style="-fx-text-fill: #333333;" text="Click button to getdata" textAlignment="CENTER" wrapText="true">
         <font>
             <Font size="13.0" />
         </font>
     </Label>
     
     <!-- Fetch Button -->
-    <Button fx:id="fetchButton" onAction="#handleFetchData" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #e10600; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Fetch F1 Data">
+    <Button fx:id="fetchButton" onAction="#handleFetchData" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #e10600; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="F1 Data">
         <font>
             <Font size="14.0" />
         </font>
