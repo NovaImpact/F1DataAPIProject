@@ -1,72 +1,28 @@
 package com.example.dataapiproject;
 
-
 public class F1ApiData {
+    private String position;
     private String driverName;
     private String team;
-    private String position;
     private String time;
     private String gap;
-    
-    public F1ApiData(String driverName, String team, String position, String time, String gap) {
-        this.driverName = driverName;
-        this.team = team;
-        this.position = position;
-        this.time = time;
-        this.gap = gap;
-    }
-    
-    public F1ApiData() {
-        this.driverName = "";
-        this.team = "";
-        this.position = "";
-        this.time = "";
-        this.gap = "";
-    }
-    
 
-    public String getDriverName() {
-        return driverName;
-    }
-    
-    public String getTeam() {
-        return team;
-    }
-    
-    public String getPosition() {
-        return position;
-    }
-    
-    public String getTime() {
-        return time;
-    }
-    
-    public String getGap() {
-        return gap;
-    }
-    
-    public void setDriverName(String driverName) {
-        this.driverName = driverName;
-    }
-    
-    public void setTeam(String team) {
-        this.team = team;
-    }
-    
-    public void setPosition(String position) {
+    public F1ApiData(String position, String driverName, String team, String time, String gap) {
         this.position = position;
-    }
-    
-    public void setTime(String time) {
+        this.driverName = driverName;
+        this.team = team;
         this.time = time;
-    }
-    
-    public void setGap(String gap) {
         this.gap = gap;
     }
-    
+
+    public String getPosition() { return position; }
+    public String getDriverName() { return driverName; }
+    public String getTeam() { return team; }
+    public String getTime() { return time; }
+    public String getGap() { return gap; }
+
     @Override
     public String toString() {
-        return "Position: " + position + " | " + driverName + " (" + team + ") | Time: " + time + " | Gap: " + gap;
+        return position + ". " + driverName + " - " + team + " [" + time + "]";
     }
 }
